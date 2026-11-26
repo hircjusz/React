@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewly — Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ========== HEADER / NAV (Flexbox) ========== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">Brewly</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#pricing" class="btn btn-small">Get started</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO (Grid, two columns) ========== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Fresh roasted, every week</p>
+          <h1>Coffee that finds <span class="highlight">you</span>.</h1>
+          <p class="lead">
+            Small-batch beans from independent roasters, delivered to your door
+            at the exact pace you drink them.
+          </p>
+          <div class="hero-actions">
+            <a href="#pricing" class="btn">Start a subscription</a>
+            <a href="#features" class="btn btn-ghost">How it works</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="cup"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES (auto-fit Grid) ========== -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title">Why Brewly</h2>
+        <div class="features-grid">
+          <article class="card">
+            <div class="card-icon">☕</div>
+            <h3>Hand-picked roasters</h3>
+            <p>We taste hundreds of coffees a month so you only get the good ones.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">📦</div>
+            <h3>Flexible delivery</h3>
+            <p>Weekly, bi-weekly or monthly. Pause or skip anytime.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🌱</div>
+            <h3>Fully compostable</h3>
+            <p>Every bag and box goes straight into your compost bin.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRICING (Flexbox, featured card) ========== -->
+    <section id="pricing" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Simple pricing</h2>
+        <div class="pricing">
+          <div class="price-card">
+            <h3>Solo</h3>
+            <p class="price">$14<span>/mo</span></p>
+            <ul>
+              <li>1 bag (250g)</li>
+              <li>Monthly delivery</li>
+            </ul>
+            <a href="#" class="btn btn-ghost">Choose</a>
+          </div>
+          <div class="price-card featured">
+            <span class="badge">Most popular</span>
+            <h3>Duo</h3>
+            <p class="price">$26<span>/mo</span></p>
+            <ul>
+              <li>2 bags (500g)</li>
+              <li>Bi-weekly delivery</li>
+              <li>Free grinder</li>
+            </ul>
+            <a href="#" class="btn">Choose</a>
+          </div>
+          <div class="price-card">
+            <h3>Office</h3>
+            <p class="price">$59<span>/mo</span></p>
+            <ul>
+              <li>5 bags (1.25kg)</li>
+              <li>Weekly delivery</li>
+            </ul>
+            <a href="#" class="btn btn-ghost">Choose</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT (form styling) ========== -->
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2 class="section-title">Get 20% off your first box</h2>
+        <form class="signup" onsubmit="event.preventDefault()">
+          <label for="email" class="visually-hidden">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+          <button type="submit" class="btn">Send me the code</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Brewly — a CSS practice page.</p>
+    </div>
+  </footer>
+</body>
+</html>
